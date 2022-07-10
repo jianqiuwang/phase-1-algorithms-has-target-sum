@@ -1,5 +1,23 @@
 function hasTargetSum(array, target) {
+  for(let i=0;i<array.length;i++){
+    for(let j =i+1;j<array.length;j++){
+      if(target-array[i]===array[j]){
+        return true
+      }
+    }
+  }
   // Write your algorithm here
+  // let hashmap = {}
+  // for(let i = 0; i<array.length;i++){
+  //   const result = target - array[i]
+  //   if(result in hashmap){
+  //     return true
+  //   }else{
+  //     hashmap[array[i]]=i
+  //   }
+  // }
+  // return false
+  return false
 }
 
 /* 
